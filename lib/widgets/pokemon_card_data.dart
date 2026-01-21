@@ -15,17 +15,17 @@ class PokemonCardData extends StatelessWidget {
           child: Image.network(
             image,
             fit: BoxFit.contain,
-          ), 
-        ), 
+          ),
+        ),
         const Divider(),
-        Text( 
+        Text(
           "${name[0].toUpperCase()}${name.substring(1)}",
-          style: const TextStyle( 
-            fontSize: 21, 
-            color: Colors.black87, 
-          ), 
-        ), 
-      ], 
-    ); 
-  } 
+          style: const TextStyle(
+            fontSize: 21,
+            color: Colors.black87,
+          ),
+        ),
+      ],
+    );
+  }
 }

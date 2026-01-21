@@ -1,5 +1,17 @@
+import '../models/poke_model.dart';
+import 'dart:convert';
+import 'package:flutter/material.dart';
+import '../api/pokeapi.dart';
+
+class Home extends StatefulWidget {
+  const Home({super.key});
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
 class _HomeState extends State<Home> {
-    List<Pokemon> pokemon = List.empty();
+    List<Pokemon> pokemon = [];
 
     @override
     void initState() {
@@ -19,4 +31,5 @@ void getPokemonFromPokeApi() async {
             }).toList();
         });
     });
+}
 }
